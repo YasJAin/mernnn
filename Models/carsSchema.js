@@ -18,7 +18,7 @@ const carSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    carImage: {
+    image: {
       type: String,
       required: true,
     },
@@ -29,7 +29,7 @@ const carSchema = new mongoose.Schema(
     addedBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
-      required: true,
+      required: false,
     },
   },
   {
